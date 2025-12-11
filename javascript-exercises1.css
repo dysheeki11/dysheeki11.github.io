@@ -1,0 +1,325 @@
+#projectsDiv{
+    display: flex;
+    gap: 10px;
+}
+
+/*--------------TIP CALCULATOR--------------------*/
+input:focus{
+    outline: none;
+}
+p{
+    margin: 0;
+}
+#tipCalculator{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(240, 235, 229);
+    width: 440px;
+    height: 330px;
+    padding-left: 25px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+#calculateBtn{
+    background-color: rgb(67, 179, 67);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 400px;
+    height: 30px;
+    cursor: pointer;
+}
+.inputBar{
+    margin-bottom: 10px;
+    height: 35px;
+    font-size: 16px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+.tipCalculatorTitle{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 100px;
+}
+.total-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#totalBillAmount{
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#closeBtn{
+    width: 60px;
+    height: 30px;
+    align-self: self-end;
+    margin-right: 20px;
+    border: none;
+    background-color: rgb(236, 42, 42);
+    color:  white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/*-----------TEMEPRATURE CONVERTER-----------------------*/
+@keyframes fadeInDown  {
+    0% {opacity: 1; transform:translateY(-1000px);}
+    100% {opacity: 1; transform: translateY(0)}
+}
+#tempConverter{
+    display: none;
+    flex-direction: column;
+    width: 500px;
+    background: linear-gradient(45deg , rgb(132, 179, 132), rgb(177, 228, 177));
+    height: 270px;
+    justify-items: center;
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.converter-tab{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(181, 240, 208);
+    width: 450px;
+    height: 200px;
+    padding-left: 20px;
+    border-radius: 10px;
+    
+}
+.tempInput{
+    height: 30px;
+    font-size: 15px;
+    font-family: "Science Gothic", sans-serif;
+    padding-left: 10px;
+    box-shadow: inset 0 0 15px rgba(140, 175, 143, 0.5);
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(131, 185, 131);
+    border-radius: 5px;
+}
+.tempInput::placeholder{
+    color: lightgray;
+    font-style: italic;
+    color: rgb(171, 182, 171);
+
+}
+
+.tempLabel{
+    font-family: "Science Gothic", sans-serif;
+    color: rgb(5, 68, 5);
+}
+.tempTitle{
+    font-family: "Science Gothic", sans-serif;
+    font-size: 25px;
+    color: rgb(5, 68, 5);
+}
+#closeTempBtn{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+    color:rgb(82, 77, 77);
+    background-color: rgb(33, 185, 33);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#closeTempBtn:hover{
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}
+
+/*------------------------------*/
+#testimonialSlider{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.testimonialContainer.one{
+    background:linear-gradient(to left, rgb(115, 31, 148) 60%, rgb(71, 5, 146));
+    width: 700px;
+    height: 300px;
+    justify-items: center;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px ;
+}
+
+.testimonialContainer.two{
+    background:linear-gradient(to right, rgb(241, 193, 135) 20%,rgb(245, 202, 129) );
+    width: 700px;
+    height: 300px;
+    justify-items: center;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(155, 104, 39,0.8);
+}
+
+.testimonialContainer.three{
+    background: linear-gradient(to left, rgb(116, 111, 105) 40%, rgb(158, 148, 148));
+    width: 700px;
+    height: 300px;
+    justify-items: center;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(97, 87, 72, 0.8);
+}
+
+
+
+.testimonial-div.one{
+    background-color: rgb(15, 25, 112);
+    width: 600px;
+    height: 200px;
+    align-content: center;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.testimonial-div.two{
+    background-color:rgba(185, 121, 36, 0.6);
+    width: 600px;
+    height: 200px;
+    align-content: center;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.testimonial-div.three{
+    background-color:rgba(92, 68, 36, 0.6);
+    width: 600px;
+    height: 200px;
+    align-content: center;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 15px;
+    position: relative;
+}
+
+
+
+.testimonial-div p {
+    font-family: "Playwrite NO",sans-serif;
+    color: white;
+}
+.testimonial-content{
+    margin-bottom: 20px;
+}
+.testimonial-author{
+    font-size: 13px;
+    justify-self: end;
+    margin-right: 30px;
+}
+.testimonial-profile{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    left: 240px;
+    top: -80px;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+    
+}
+
+.testimonialContainer {
+    display: none;
+}
+.testimonialContainer.active{
+    display: block;
+    animation: fadeIn 1s ease forwards;
+}
+#closeSlideBtn{
+    position: absolute;
+    top: 1%;
+    right: 0.5%;
+    width: 140px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(187, 170, 149, 0.3);
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+#closeSlideBtn:hover{
+    background-color: red;
+    color: white;
+}
+/*---------------AGE CALCULATOR-------------------------*/
+
+#ageCalculator{
+    display: none;
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ageTitle, .ageCalcLabel, #yourAge, #calcAgeBtn, #inputDate{
+    font-family: "Bitcount Prop Single";
+}
+
+.ageTitle{
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+#inputDate{
+    margin-bottom: 20px;
+    height: 30px;
+    width: 20%;
+    min-width: 250px;
+    max-width: 350px;
+    border-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+#calcAgeBtn{
+   margin-bottom: 20px;
+   background-color: chocolate;
+   color: white;
+   width: 150px;
+   height: 40px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.5s ease-in-out;
+}
+#calcAgeBtn:hover{
+    opacity: 0.9;
+}
+#calcAgeBtn:active{
+    scale: 1.1;
+}
+
+
+
+

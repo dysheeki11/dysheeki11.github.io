@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="javascript-exercises1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Prop+Single:wght@100..900&family=Oswald:wght@200..700&family=Playwrite+NO:wght@100..400&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 
+    "Bitcount Prop Single" 
+    "Oswald"
+    "Science Gothic"
+    "Bebas Neue"
+    "Playwrite NO"
+    -->
+
+</head>
+
+<body>
+    <div id="projectsDiv">
+        <button id="tipCalcBtn"> Tip Calculator </button>
+        <button id="tempConBtn"> Temperature Converter </button>
+        <button id="sliderBtn"> Slider </button>
+        <button id="yourAgeHere"> Age Calculator </button>
+    
+    </div>
+
+
+    <div id="tipCalculator" class="tip-Calculator">
+        <button id="closeBtn"> Close </button>
+        <p class="tipCalculatorTitle"> Tip Calculator </p>
+        <p id="tipMessage"> Enter the Bill Amount and Tip Perecentage to calculate the total. </p>
+        <label  for="billAmount" class="tipLabel"> Bill Amount: </label>
+        <input  id="billAmount" class="inputBar" type="text">
+        <label  for="tipPercent" class="tipLabel"> Tip Percentage: </label>
+        <input  id="tipPercent" class="inputBar" type="text">
+        <div class="total-div">
+            <p class="tipLabel"> Total: </p>
+            <p id="totalBillAmount">  </p>
+        </div>
+        <button id="calculateBtn" onclick="calculateTotal()"> Calculate </button>
+    </div>
+
+    <div id="tempConverter">
+        <p class="tempTitle"> Temperature Converter </p>
+        <button id="closeTempBtn"> X </button>
+        <div class="converter-tab">
+            
+            <label class="tempLabel" for="temp1"> Celsius: </label>
+            <input autocomplete="off" class="tempInput" id="temp1" type="text" placeholder="Enter Temperature">
+            <label class="tempLabel" for="temp2"> Fahrenheit: </label>
+            <input autocomplete="off" class="tempInput" id="temp2" type="text" placeholder="Enter Temperature">
+            <label class="tempLabel" for="temp3"> Kelvin: </label>
+            <input autocomplete="off" class="tempInput" id="temp3" type="text" placeholder="Enter Temperature">
+        </div>
+    </div>
+
+    <div id="testimonialSlider">
+
+        <button id="closeSlideBtn"> Back </button>
+        <div id="sliderContent1" class="testimonialContainer one">
+            <div class="testimonial-div one">
+                <img class="testimonial-profile" src="https://thumbs.dreamstime.com/b/penguin-azuki-nft-style-street-wear-half-length-portrait-penguin-wearing-street-wear-azuki-nft-style-features-278606996.jpg" >
+               
+                <p class="testimonial-content"> 
+                In this project, I learned how to build a
+                testimonial slider using HTML, CSS and JavaScript.
+                I used a timer to change the sliders automatically. 
+                </p>
+                 <p class="testimonial-author">
+                    Augie Gabriel V.
+                </p>
+                
+             </div>
+        </div>
+
+        <div id="sliderContent2" class="testimonialContainer two">
+            <div class="testimonial-div two">
+                <img class="testimonial-profile" src="https://hd2.tudocdn.net/974622?w=550&h=550" >
+               
+                <p class="testimonial-content"> 
+                Awoo oof oof. Oof oof awo awooo awo. Awoooooo awoooo awoo
+                aw awooo oof ooof. Awooo. (barks in silence)
+                </p>
+                 <p class="testimonial-author">
+                    Dog Doge
+                </p>
+                
+             </div>
+        </div>
+
+        <div id="sliderContent3" class="testimonialContainer three">
+            <div class="testimonial-div three">
+                <img class="testimonial-profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm1XBLC2NH2EgQ9qgLM7zpVc8vDhfzhI9Vlg&s" >
+               
+                <p class="testimonial-content"> 
+                Give me food. Give me attention. Give me catnips. 
+                No, don't touch me.
+                Yes, stay away from me.
+                </p>
+                 <p class="testimonial-author">
+                    Mr Cool Cat
+                </p>
+                
+             </div>
+        </div>
+        
+    </div>
+
+    <div id="ageCalculator">
+        <p class="ageTitle" > Age Calculator </p>
+        <label class="ageCalcLabel" for="inputDate"> Enter your date of birth: </label>
+        <input id="inputDate" type="date">
+        <button id="calcAgeBtn"> Calculate Age </button>
+        <p id="yourAge"> Let's see how old you are!! </p>
+
+    </div>
+
+     <script src="javascript-exercises1.js">  </script>
+</body>
+
+</html>
