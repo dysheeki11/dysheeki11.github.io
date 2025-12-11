@@ -9,7 +9,7 @@ function calculateTotal(){
 
 
     console.log(num1, num2, num1num2, equationtip)
-    document.getElementById("totalBillAmount").innerText = `$${equationtip.toFixed(2)}`
+    document.getElementById("totalBillAmount").innerText = `₱${equationtip.toFixed(2)}`
 }
 tipCalcBtn.addEventListener("click", function(){ 
     document.getElementById("tipCalculator").style.display= "flex";
@@ -155,6 +155,7 @@ yourAgeHere.addEventListener("click", function(){
 });
 
 /*------------------------------Buttons-----------------------------------*/ 
+
 
 
 
